@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Threadsmith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: #fafaf7; color: #0a0a0a; font-family: "Inter", system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  :root { --red: #b8221a; --navy: #080d1f; --border: rgba(0,0,0,0.08); --border-strong: rgba(0,0,0,0.16); --ink-2: #333; --ink-4: #999; --serif: "Fraunces", Georgia, serif; }
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(250,250,247,0.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+  .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 22px clamp(20px, 4vw, 48px); }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: var(--serif); font-weight: 500; font-size: 19px; letter-spacing: -0.01em; color: #0a0a0a; text-decoration: none; }
+  .logo-bar { width: 2px; height: 22px; background: var(--red); }
+  .logo-sub { color: var(--ink-4); font-size: 11px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; font-family: "Inter", system-ui, sans-serif; }
+  .nav-back { color: var(--ink-4); font-size: 14px; text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.15s; }
+  .nav-back:hover { color: #0a0a0a; }
+  .hero { padding: 64px clamp(20px, 4vw, 48px) 48px; max-width: 1100px; margin: 0 auto; }
+  .hero-label { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 16px; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(32px, 5vw, 52px); font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .hero-meta { color: var(--ink-4); font-size: 14px; }
+  .content { max-width: 720px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px) 96px; }
+  .content h2 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin: 48px 0 12px; color: #0a0a0a; }
+  .content p { color: var(--ink-2); margin-bottom: 16px; font-size: 16px; line-height: 1.7; }
+  .content ul { color: var(--ink-2); margin: 0 0 16px 24px; font-size: 16px; line-height: 1.7; }
+  .content ul li { margin-bottom: 8px; }
+  .content a { color: #0a0a0a; }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  footer { background: var(--navy); color: rgba(255,255,255,0.5); padding: 40px clamp(20px,4vw,48px); text-align: center; font-size: 13px; }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  footer a:hover { color: white; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><span class="logo-bar"></span>BullForge <span class="logo-sub">&nbsp;Labs Ltd</span></a>
+    <a href="/" class="nav-back">← Back to home</a>
+  </div>
+</nav>
+<div class="hero">
+  <div class="hero-label">Legal</div>
+  <h1>Privacy Policy — Threadsmith</h1>
+  <p class="hero-meta">BullForge Labs Ltd &nbsp;·&nbsp; Last updated: May 2026</p>
+</div>
+<div class="content">
+
+  <p>Threadsmith is developed by BullForge Labs Ltd ("we", "us", "our"), registered in England and Wales. This policy explains what data Threadsmith collects, how it is used, and your rights under UK GDPR and the Data Protection Act 2018.</p>
+
+  <h2>What we collect</h2>
+  <p>Threadsmith collects the minimum data necessary to provide the service:</p>
+  <ul>
+    <li><strong>Email address</strong> — collected at sign-up and used solely for account authentication via Supabase.</li>
+    <li><strong>Product details you enter</strong> — names, descriptions, and keywords you provide to power the thread scanning and reply drafting features.</li>
+    <li><strong>Usage data</strong> — AI token usage and scan history, used to operate the service and display your activity within the app.</li>
+  </ul>
+
+  <h2>What we do not collect</h2>
+  <ul>
+    <li>No advertising identifiers (IDFA or similar)</li>
+    <li>No location data</li>
+    <li>No third-party analytics SDKs</li>
+    <li>No payment information (handled entirely by Apple StoreKit)</li>
+  </ul>
+
+  <h2>Your Claude API key</h2>
+  <p>Threadsmith uses a bring-your-own-key (BYOK) model. Your Claude API key is stored securely in your device's keychain and is never transmitted to our servers. When the app calls the Claude API, it does so directly from your device using your own key. We do not have access to your API key at any time.</p>
+
+  <h2>How we use your data</h2>
+  <ul>
+    <li><strong>Email</strong> — account authentication only. We do not send marketing emails.</li>
+    <li><strong>Product data</strong> — to power the scanning and reply drafting features. We do not share this with third parties.</li>
+    <li><strong>Usage data</strong> — to operate and improve the service.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>Threadsmith uses the following third-party services:</p>
+  <ul>
+    <li><strong>Supabase</strong> — database and authentication. Data is processed in the EU and US under Supabase's data processing agreement. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</li>
+    <li><strong>Anthropic</strong> — Claude API, called directly from your device using your own API key. We are not a party to those requests. See <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</li>
+    <li><strong>Apple StoreKit</strong> — subscription billing. All payment data is held by Apple. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</li>
+  </ul>
+
+  <h2>Data retention</h2>
+  <p>We retain your account data for as long as your account is active. Accounts with no activity for 12 months will be deleted along with all associated data. You can delete your account and all associated data at any time from within the app.</p>
+
+  <h2>Your rights under UK GDPR</h2>
+  <p>If you are based in the United Kingdom or European Union, you have the following rights:</p>
+  <ul>
+    <li><strong>Right to deletion</strong> — delete your account and all data at any time in-app, or contact us to request deletion.</li>
+    <li><strong>Right to access</strong> — request a copy of the data we hold about you.</li>
+    <li><strong>Right to portability</strong> — request an export of your data by contacting us.</li>
+    <li><strong>Right to rectification</strong> — request correction of inaccurate data.</li>
+    <li><strong>Right to object</strong> — object to processing in certain circumstances.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:admin@bullforgelabs.com">admin@bullforgelabs.com</a>. We will respond within 30 days.</p>
+
+  <h2>Data security</h2>
+  <p>Account data is stored securely via Supabase with encryption at rest and in transit. Your API key is stored in your device keychain and never leaves your device.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes to this policy, we will update the date at the top of this page and notify users via the app where appropriate.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data? Email <a href="mailto:admin@bullforgelabs.com">admin@bullforgelabs.com</a>.</p>
+
+  <hr class="divider">
+  <p style="color: var(--ink-4); font-size: 14px;">BullForge Labs Ltd &nbsp;·&nbsp; Registered in England and Wales &nbsp;·&nbsp; <a href="/privacy.html">General Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms of Service</a></p>
+
+</div>
+<footer>
+  <p>&copy; 2026 BullForge Labs Ltd &nbsp;·&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp; <a href="/refund-policy.html">Refund Policy</a> &nbsp;·&nbsp; <a href="mailto:admin@bullforgelabs.com">admin@bullforgelabs.com</a></p>
+</footer>
+</body>
+</html>
